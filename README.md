@@ -85,4 +85,4 @@ Any contributions you make are **greatly appreciated**.
 If you have a suggestion that would make this app better, please fork the repo and
 create a pull request. You can also simply open a [discussions](https://github.com/Aklilu-Mandefro/chatCall/discussions/) or an [issue](https://github.com/Aklilu-Mandefro/chatCall/issues) with the tag "enhancement".
 
-### Please give this repo a ⭐ if you found it helpful and share it with your friends.
+#### Please give this repo a ⭐ if you found it helpful and share it with your friends.
