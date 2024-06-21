@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Log in | chatCall - Chat, Audio and Video Call App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="A full-stack app with real time chat, and audio & video call features"
+      name="description"
+    />
+    <meta content="chatCall" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <!-- Bootstrap Css -->
+    <link
+      href="assets/css/bootstrap-dark.min.css"
+      id="bootstrap-dark-style"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/bootstrap.min.css"
+      id="bootstrap-style"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link
+      href="assets/css/app-dark.min.css"
+      id="app-dark-style"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/app.min.css"
+      id="app-style"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="./assets/css/toastr.min.css" rel="stylesheet" />
+    <link
+      href="assets/css/style.css"
+      id="app-style"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid loader_bg">
+      <div class="text-center">
+        <div class="loader">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="account-pages my-5 pt-sm-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6 col-xl-5">
+            <div class="text-center mb-4">
+              <a href="/" class="auth-logo mb-5 d-block">
+                <img
+                  src="assets/images/logo-dark.png"
+                  alt=""
+                  height="30"
+                  class="logo logo-dark"
+                />
+                <img
+                  src="assets/images/logo-light.png"
+                  alt=""
+                  height="30"
+                  class="logo logo-light"
+                />
+              </a>
+              <h4>Sign in</h4>
+              <p class="text-muted mb-4">Sign in to continue to chatCall.</p>
+            </div>
+
+            <div class="card">
+              <div class="card-body p-4">
+                <div class="p-3">
+                  <form class="form">
+                    <div class="mb-3">
+                      <label class="form-label">Email</label>
+                      <div class="input-group mb-3 bg-soft-light rounded-3">
+                        <span
+                          class="input-group-text text-muted"
+                          id="basic-addon3"
+                        >
+                          <i class="ri-user-2-line"></i>
+                        </span>
+                        <input
+                          type="email"
+                          id="email"
+                          class="form-control form-control-lg border-light bg-soft-light"
+                          placeholder="Enter Email"
+                          aria-label="Enter Username"
+                          aria-describedby="basic-addon3"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="mb-4">
+                      <div class="float-end">
+                        <a
+                          href="forgot_password"
+                          class="text-muted font-size-13"
+                          >Forgot password?</a
+                        >
+                      </div>
+                      <label class="form-label">Password</label>
+                      <div class="input-group mb-3 bg-soft-light rounded-3">
+                        <span
+                          class="input-group-text text-muted"
+                          id="basic-addon4"
+                        >
+                          <i class="ri-lock-2-line"></i>
+                        </span>
+                        <input
+                          type="password"
+                          id="password"
+                          class="form-control form-control-lg border-light bg-soft-light"
+                          placeholder="Enter Password"
+                          aria-label="Enter Password"
+                          aria-describedby="basic-addon4"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="mb-4">
+                      <div
+                        class="g-recaptcha"
+                        data-sitekey="<%= process.env.CAPTCHA_SITEKEY %>"
+                      ></div>
+                    </div>
+
+                    <div class="form-check mb-4">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="remember-check"
+                      />
+                      <label class="form-check-label" for="remember-check"
+                        >Remember me</label
+                      >
+                    </div>
+
+                    <div class="d-grid">
+                      <button
+                        class="btn btn-primary waves-effect waves-light"
+                        type="submit"
+                      >
+                        Sign in
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 text-center">
+              <p>
+                Don't have an account ?
+                <a href="register" class="fw-medium text-primary">
+                  Signup now
+                </a>
+              </p>
+              <p>
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                chatCall. Built with
+                <i class="mdi mdi-heart text-danger"></i> by
+                <a href="https://github.com/Aklilu-Mandefro/" target="_blank"
+                  >Aklilu Mandefro</a
+                ><br />
+                Ethiopia, East Africa
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end account-pages -->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="assets/js/jquery.form.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/axios.min.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="./assets/js/toastr.min.js"></script>
+  </body>
+</html>
