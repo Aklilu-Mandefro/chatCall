@@ -5,7 +5,7 @@ message, audio and video calls.
 
 ## 💻⚛️🏗️🛠️ Tech-stacks used
 
-- [Node](https://nodejs.org/en)
+- [Node.js](https://nodejs.org/en)
 - [EJS](https://ejs.co/)
 - [MongoDB](https://www.mongodb.com/)
 - [Socket.io](https://socket.io/)
