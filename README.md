@@ -44,7 +44,7 @@ message, audio and video calls.
 Your hosting server:
 
 1. Must support Node.js and have SSH access.
-2. Must require SSL installed.
+2. SSL (Secure Sockets Layer) must be installed.
 
 ## Installation
 
