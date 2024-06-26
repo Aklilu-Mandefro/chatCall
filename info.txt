@@ -1,6 +1,0 @@
-Initial connection string: 
-mongodb+srv://chatcall_user:RWWXoVaxvlWN3rxz@chatcall-app-cluster.xgke8hs.mongodb.net/chatcall_db?retryWrites=true&w=majority&appName=chatcall-app-cluster
-
-
-New connection string without SRV:
-mongodb://chatcall_user:RWWXoVaxvlWN3rxz@chatcall-app-cluster.xgke8hs.mongodb.net:27017/chatcall_db?retryWrites=true&w=majority&appName=chatcall-app-cluster
