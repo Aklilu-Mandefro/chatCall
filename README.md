@@ -18,6 +18,7 @@ message, audio and video calls.
 - Settings
 - One to one or group chat/call
 - Create group and add members to it
+- Invite friends, colleagues, or anyone else who uses the app
 - search for contacts
 - Contact list
 - Remove contacts
