@@ -61,7 +61,7 @@ Your hosting server:
 6. Add your `CAPTCHA_SECRET`, `CAPTCHA_SITEKEY`,`JWT_SECRET`, and other additional variables you want to your `.env` file.
 7. Once you successfully connect with MongoDB and configure **.env**, then run `npm start`, it will run the **chatCall** app on local server on http://localhost:2000, if you use 2000 as your port No.
 
-## [Visit the App](https://chatcall.onrender.com/)
+## [Visit chatCall](https://chatcall.onrender.com/)
 
 <br>
 
