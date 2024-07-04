@@ -3,6 +3,11 @@
 chatCall is a full-stack application that allows you to send and/ receive instant
 message, audio and video calls.
 
+## Motivation 
+While platforms like Zoom, Google Meet, and many of the more feature-rich communication apps on the market have undoubtedly revolutionized the way we communicate in the digital age, navigating the various menus, settings, and customization options often proved to be a frustrating and time-consuming experience, especially for **less tech-savvy users**. 
+
+I recognized that the true power of communication technology lies in its ability to empower and connect people, not to overwhelm them with unnecessary complexity. This realization inspired me to take a radically different approach with chatCall: create a platform that would prioritize simplicity and intuitiveness above all else, empowering everyone to communicate effectively with minimal effort.
+
 ## 💻⚛️🏗️🛠️ Tech-stacks used
 
 - [Node.js](https://nodejs.org/en)
