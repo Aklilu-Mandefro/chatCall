@@ -108,8 +108,6 @@ exports.signin = catchAsync(async (req, res, next) => {
     });
 });
 
-
-
 /**
  * Forgot Password
  */
