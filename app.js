@@ -67,13 +67,18 @@ const { log } = require("console");
 dotenv.config({ path: "./config.env" });
 
 /* ---------for Local database connection---------- */
-//const DB = process.env.DATABASE_LOCAL;
+const DB_LOCAL = process.env.DATABASE_LOCAL;
 
 /*--------for Atlas database connection----------*/
-const DB = process.env.DATABASE.replace(
-"<password>",
-process.env.DATABASE_PASSWORD
-);
+let DB;
+if (process.env.DATABASE) {
+  DB = process.env.DATABASE.replace(
+    "<password>",
+    process.env.DATABASE_PASSWORD || ''
+  );
+} else {
+  DB = DB_LOCAL;
+}
 
 mongoose
   .connect(DB, {
@@ -87,7 +92,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Socket
 const http = require("http").createServer(app);
 const io = require("socket.io")(http);
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 http.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 app.use(express.static(__dirname + "/public"));
 
